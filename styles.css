@@ -1,0 +1,218 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+.btn-color-orange{
+    background-color: #F05A2D;
+    color: #fff;
+}
+
+
+.btn-color-blue{
+    background-color: #18374F;
+}
+
+.enquiry-form{
+    background-color: #F05A2D;
+    color: #fff;
+    padding: 35px;
+}
+
+.navbar-ul{
+    justify-content: space-around!important;
+}
+
+.hero-section-text{
+   /*  top: 25%;
+    left: 0; */
+    background-image: url('./src/Background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-section-inner-container{
+    padding: 40px 0;
+    row-gap: 1rem;
+}
+
+.margin-auto{
+    margin-inline:auto;
+}
+
+input{
+    margin:10px auto
+}
+
+.form-buttons{
+    margin-top: 30px;
+}
+
+.percentage-data{
+    color: #F05A2D;
+    font-size: 75px;
+    font-weight: 800;
+    margin-bottom: 0 ;
+}
+
+.percentage-container{
+    background-color: #FFF3EF;
+    padding: 40px 0;
+}
+
+/* Explore programs -- Info and image section */
+
+
+.exp-sec-heading-container{
+    background-color: #18374F;
+    color: #fff;
+    font-weight: 700;
+    padding: 1.4%;
+    margin: 4% auto ;
+}
+
+.explore-program-section{
+    width:90%;
+    margin: 0 auto;
+}
+
+.exp-btns-container{
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.exp-btn{
+    border-radius:20px;
+    border-color: grey;
+    background-color: white;
+    color: grey;
+}
+
+.exp-btn:focus{
+    border-color: #F05A2D;
+    color: #F05A2D;
+}
+
+.info-title{
+    color: #BA4717;
+}
+
+.color-blue{
+    color: #18374F;
+}
+
+.info-sub-title{
+    font-weight: 700;
+}
+
+.info-list{
+    font-size: 15px;
+}
+
+.info-img-container
+{
+    column-gap: 1.5rem;
+}
+
+.info-container{
+    background-color: #FAF9F9;
+}
+
+.info-small-col{
+    height: 45%;
+    background-color: rgba(150, 209, 255, 0.12);
+    margin-top: 10px;
+}
+
+
+.elig-list li {
+    list-style-image: url('./src/check-mps.svg');
+}
+
+
+.courses-highlights{
+    background: #FFE8E1;
+    width: 90%; 
+}
+
+.ch-main-container{
+    row-gap:20px;
+}
+
+.ch-container{
+    border: 1px solid #F05A2D;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 20px 0;
+    width: 54%;
+}
+
+
+
+
+.recruiters-section{
+    width: 90%;
+}
+
+
+
+
+
+/* || FAQ SECTION  */
+
+.faqs-section{
+    width: 70%;
+}
+
+
+
+.que-ans{
+    position: relative;
+}
+
+.que-ans .question .down-arrow svg{
+    transform: rotate(-90deg);
+}
+
+.que-ans[open] .question .down-arrow svg{
+    transform: rotate(0deg);
+}
+
+.question{
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.que-ans summary::marker{
+    content: ''
+}
+
+
+details summary::-webkit-details-marker {
+    display:none;
+  }
+
+
+
+.footer-section{
+    background: #18374F;
+}
+
+.social-col{
+    column-gap: 3px;
+}
+
+
+@media screen and (max-width: 600px){
+    .percentage-container{
+        flex-direction: column;
+    }
+}
