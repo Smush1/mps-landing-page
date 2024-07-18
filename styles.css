@@ -47,7 +47,15 @@
 .hero-section-inner-container{
     padding: 40px 0;
     row-gap: 1rem;
+    background-image: linear-gradient(0deg, rgba(24, 55, 79, 0.41),
+    rgba(24, 55, 79, 1));
+    align-items: center;
 }
+
+.hero-section-bba-heading{
+    border-bottom: 3px solid #F05A2D;
+}
+
 
 .margin-auto{
     margin-inline:auto;
@@ -139,7 +147,7 @@ input{
 
 
 .elig-list li {
-    list-style-image: url('./src/check-mps.svg');
+    list-style-type: none ;
 }
 
 
@@ -231,6 +239,43 @@ details summary::-webkit-details-marker {
     column-gap: 3px;
 }
 
+/* ||  Footer button styling */
+input {
+    background: #8196aa;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  input::placeholder {
+    color: white;
+  }
+  
+  button {
+    background: #16bdae;
+    border: 0;
+    border-radius: 7px;
+    color: white;
+    padding: 15px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+  
+  .pt-site-footer__submit {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+  }
+
+
+  /*  ||  End of button status*/
 
 @media screen and (max-width: 600px){
     .percentage-container{
