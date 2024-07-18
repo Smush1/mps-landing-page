@@ -1,3 +1,6 @@
+
+/* Buttons to update course details */
+
 const courseDetails =[
     {
         "id": 1,
