@@ -291,6 +291,8 @@ input{
 
 
 
+
+
 /* || FAQ SECTION  */
 
 .faqs-section{
@@ -303,11 +305,20 @@ input{
     position: relative;
 }
 
-.que-ans .question .down-arrow svg{
+.fa-solid{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        border-radius: 50%;
+}
+
+.que-ans .question .down-arrow{
     transform: rotate(-90deg);
 }
 
-.que-ans[open] .question .down-arrow svg{
+.que-ans[open] .question .down-arrow{
     transform: rotate(0deg);
 }
 
@@ -382,6 +393,97 @@ details summary::-webkit-details-marker {
   }
 
 
+
+
+
+  /* 12.Footer Section Start ------------------------------ */
+.footer {
+    background-color: var(--DARK-CLR);
+    padding: 50px 0px;
+}
+
+.th-btn {
+    background: var(--LIGHT-CLR);
+    border: 0;
+    border-radius: 7px;
+    color: var(--CLR-WHITE);
+    padding: 10px;
+
+}
+
+.footer .link-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.footer .link-list ul {
+    list-style: none;
+}
+
+.footer .link-list ul li {
+    margin-bottom: 15px;
+}
+
+.footer .link-list ul li a .fa-brands{
+    width: 15px;
+}
+
+.footer .link-list a {
+    color: var(--CLR-WHITE);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer .logo {
+    max-width: 250px;
+}
+
+.footer .subscribe {
+    margin-top: 100px;
+    background-color: var(--CLR-WHITE);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.footer .subscribe input {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.footer .loc {
+    margin-top: 30px;
+}
+
+.footer .loc h6 {
+    color: #999999;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.footer .loc a {
+    color: #999999;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#footers .footer .logo {
+    margin: auto;
+}
+#footers .footer .link-list a {
+    font-size: calc(18px*.8);
+}
+
+/* ------------- Footer Section End ------------- */
+
+
+
 @media screen and (max-width) {
     .img-container, .img-container{
         width: 100%;
@@ -390,7 +492,7 @@ details summary::-webkit-details-marker {
     
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 768px){
     .percentage-container{
         flex-direction: column;
     }
@@ -426,4 +528,15 @@ details summary::-webkit-details-marker {
     .exp-btns-container{
         flex-direction: column;
     }
+
+    .footer .link-list {
+        justify-content: start;
+        margin-top: 40px;
+        gap: 30px;
+    }
+
+    .footer .subscribe {
+        margin-top: 50px;
+    }
+
 }

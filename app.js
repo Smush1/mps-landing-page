@@ -31,6 +31,8 @@ const infoTitle = document.querySelector(".info-title")
 
 
 
+
+
 detailBtns.forEach((btn)=>{
     btn.addEventListener('click', (e)=>{
         console.log(e.currentTarget.classList)
