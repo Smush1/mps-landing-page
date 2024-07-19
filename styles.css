@@ -4,25 +4,45 @@
     box-sizing: border-box;
 }
 
+
 body{
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+:root {
+    /* || COLOR */
+    --LIGHT-CLR: #F05A2D;
+    --DARK-CLR: #18374F;
+    --INFOBG-LIGHT-CLR: #FAF9F9; 
+    --HIGHLIGHTBG-LIGHT-CLR: #FFE8E1;
+    --CLR-WHITE: #ffffff;
+    --CLR-GREY: grey;
+    --HEADING-COLOR: #BA4717;
+
+
+
+}
 
 
 .btn-color-orange{
-    background-color: #F05A2D;
-    color: #fff;
+    background-color: var(--LIGHT-CLR);
+    color: var(--CLR-WHITE);
 }
 
 
 .btn-color-blue{
-    background-color: #18374F;
+    background-color: var(--DARK-CLR);
+}
+
+.btn-color-blue-border{
+    border: 1px solid var(--DARK-CLR);
+    background-color: var(--CLR-WHITE);
+    color: var(--DARK-CLR);
 }
 
 .enquiry-form{
-    background-color: #F05A2D;
-    color: #fff;
+    background-color: var(--LIGHT-CLR);
+    color: var(--CLR-WHITE);
     padding: 35px;
 }
 
@@ -45,8 +65,6 @@ body{
     font-size: 3rem;
 }
 .hero-section-text{
-   /*  top: 25%;
-    left: 0; */
     background-image: url('./src/Background-image.jpg');
     background-size: cover;
     background-position: center;
@@ -62,7 +80,7 @@ body{
 }
 
 .hero-section-bba-heading{
-    border-bottom: 3px solid #F05A2D;
+    border-bottom: 3px solid var(--LIGHT-CLR);
 }
 
 
@@ -71,7 +89,7 @@ body{
 }
 
 input{
-    margin:10px auto
+    margin:10px auto;
 }
 
 .form-buttons{
@@ -79,7 +97,7 @@ input{
 }
 
 .percentage-data{
-    background-image: linear-gradient(#f05a2d,#fff3ef);
+    background-image: linear-gradient(var(--LIGHT-CLR),var(--CLR-WHITE));
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -89,7 +107,7 @@ input{
 }
 
 .percentage-container{
-    background-color: #FFF3EF;
+    background-color: var(--CLR-WHITE);
     padding: 40px 0;
 }
 
@@ -97,8 +115,8 @@ input{
 
 
 .exp-sec-heading-container{
-    background-color: #18374F;
-    color: #fff;
+    background-color: var(--DARK-CLR);
+    color: var(--CLR-WHITE);
     font-weight: 700;
     padding: 1.4%;
     margin: 4% auto ;
@@ -116,22 +134,22 @@ input{
 
 .exp-btn{
     border-radius:20px;
-    border-color: grey;
-    background-color: white;
-    color: grey;
+    border-color: var(--CLR-GREY);
+    background-color: var(--CLR-WHITE);
+    color: var(--CLR-GREY);
 }
 
 .exp-btn:focus{
-    border-color: #F05A2D;
-    color: #F05A2D;
+    border-color: var(--LIGHT-CLR);
+    color: var(--LIGHT-CLR);
 }
 
 .info-title{
-    color: #BA4717;
+    color: var(--HEADING-COLOR) ;
 }
 
 .color-blue{
-    color: #18374F;
+    color: var(--DARK-CLR);
 }
 
 .info-sub-title{
@@ -148,7 +166,7 @@ input{
 }
 
 .info-container{
-    background-color: #FAF9F9;
+    background-color: var(--INFOBG-LIGHT-CLR);
     width: 50%;
 }
 
@@ -170,7 +188,7 @@ input{
 }
 
 .info-small-col{
-    height: 45%;
+    height: 47%;
     background-color: rgba(150, 209, 255, 0.12);
 }
 
@@ -182,7 +200,7 @@ input{
 
 
 .courses-highlights{
-    background: #FFE8E1;
+    background: var(--HIGHLIGHTBG-LIGHT-CLR);
     width: 90%; 
 }
 
@@ -191,7 +209,7 @@ input{
 }
 
 .ch-container{
-    border: 1px solid #F05A2D;
+    border: 1px solid var(--LIGHT-CLR);
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -216,14 +234,15 @@ input{
     height: 10px;
     border-radius: 5px;
     margin-inline: 5px;
+    border-color: transparent;
 }
 
 .carousel-inner{
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 
 .carousel-indicators .active{
-    background-color: #F05A2D;
+    background-color: var(--LIGHT-CLR);
 }
 
 
@@ -231,9 +250,44 @@ input{
 
 .recruiters-section{
     width: 90%;
+    margin: 40px auto;
 }
 
 
+
+
+
+
+/* ||  BACKGROUND IMAGE WITH FORM */
+
+.bg-form-section{
+    margin: 50px 0;
+    background-image: url(./src/campus-bg-img.jpg);
+}
+
+.bg-form-main-container{
+    background: white;
+    padding: 40px;
+    margin: 20px auto;
+}
+
+
+.bg-form-heading{
+    color: var(--DARK-CLR);
+}
+
+.form-buttons-2 {
+    column-gap: 2rem;
+    row-gap: 1rem;
+}
+
+.bg-sub-text{
+    width: 55%;
+}
+
+.bg-form-inner-container .form-control{
+    width: 60%;
+}
 
 
 
@@ -277,7 +331,7 @@ details summary::-webkit-details-marker {
 
 
 .footer-section{
-    background: #18374F;
+    background: var(--DARK-CLR);
     padding-bottom: 40px;
 }
 
@@ -295,10 +349,10 @@ details summary::-webkit-details-marker {
 
 
 .footer-input{
-    background: #fff;
+    background: var(--CLR-WHITE);
     border: 0;
     border-radius: 10px;
-    color: white;
+    color: var(--CLR-WHITE);
     padding: 14px;
     width: 100%;
   }
@@ -308,14 +362,14 @@ details summary::-webkit-details-marker {
   }
   
   .footer-input::placeholder {
-    color: grey;
+    color: var(--CLR-GREY);
   }
   
   .footer-submit-btn {
-    background: #F05A2D;
+    background: var(--LIGHT-CLR);
     border: 0;
     border-radius: 7px;
-    color: white;
+    color: var(--CLR-WHITE);
     padding: 10px;
     position: absolute;
     right: 5px;
@@ -328,6 +382,9 @@ details summary::-webkit-details-marker {
     width: 70%;
   }
 
+
+
+
 @media screen and (max-width: 600px){
     .percentage-container{
         flex-direction: column;
@@ -337,12 +394,10 @@ details summary::-webkit-details-marker {
         flex-direction: column;
         width: 100%;
     }
-    .img-container{
+    .img-container, .img-container-2, .info-container, .bg-sub-text, .bg-form-inner-container .form-control{
         width: 100%;
     }
-    .img-container-2{
-        width: 100%;
-    }
+
     .info-small-container{
         width: 100%;
         margin-top: 20px;
@@ -351,8 +406,7 @@ details summary::-webkit-details-marker {
     .info-small-col:nth-child(:first-child){
         padding: 20px 0 40px 0;
     }
-
-    .info-container{
-        width: 100%;
+    .exp-btns-container{
+        flex-direction: column;
     }
 }
