@@ -15,6 +15,7 @@ body{
     --DARK-CLR: #18374F;
     --INFOBG-LIGHT-CLR: #FAF9F9; 
     --HIGHLIGHTBG-LIGHT-CLR: #FFE8E1;
+    --BG-PERCENTAGE-CLR: #FFF3EF;
     --CLR-WHITE: #ffffff;
     --CLR-GREY: grey;
     --HEADING-COLOR: #BA4717;
@@ -74,7 +75,7 @@ body{
 .hero-section-inner-container{
     padding: 40px 0;
     row-gap: 1rem;
-    background-image: linear-gradient(0deg, rgba(24, 55, 79, 0.41),
+    background-image: linear-gradient(0deg, rgba(24, 55, 79, 0.6),
     rgba(24, 55, 79, 1));
     align-items: center;
 }
@@ -97,17 +98,15 @@ input{
 }
 
 .percentage-data{
-    background-image: linear-gradient(var(--LIGHT-CLR),var(--CLR-WHITE));
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-color: var(#FFF3EF);
+    color: var(--LIGHT-CLR);
     font-size: 75px;
     font-weight: 800;
     margin-bottom: 0 ;
 }
 
 .percentage-container{
-    background-color: var(--CLR-WHITE);
+    background-color: var(--BG-PERCENTAGE-CLR);
     padding: 40px 0;
 }
 
@@ -266,7 +265,7 @@ input{
 }
 
 .bg-form-main-container{
-    background: white;
+    background: var(--CLR-WHITE);
     padding: 40px;
     margin: 20px auto;
 }
@@ -286,7 +285,7 @@ input{
 }
 
 .bg-form-inner-container .form-control{
-    width: 60%;
+    width: 80%;
 }
 
 
@@ -295,7 +294,7 @@ input{
 /* || FAQ SECTION  */
 
 .faqs-section{
-    width: 70%;
+    width: 60%;
 }
 
 
@@ -314,7 +313,7 @@ input{
 
 .question{
     padding: 20px;
-    border: 1px solid black;
+    border: 1px solid var(--CLR-GREY);
     border-radius: 10px;
     margin: 20px auto;
 }
@@ -383,9 +382,15 @@ details summary::-webkit-details-marker {
   }
 
 
+@media screen and (max-width) {
+    .img-container, .img-container{
+        width: 100%;
+        height: auto;
+    }
+    
+}
 
-
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
     .percentage-container{
         flex-direction: column;
     }
@@ -394,8 +399,20 @@ details summary::-webkit-details-marker {
         flex-direction: column;
         width: 100%;
     }
+
+    .bg-form-main-container{
+        width: 95%;
+    }
+
     .img-container, .img-container-2, .info-container, .bg-sub-text, .bg-form-inner-container .form-control{
         width: 100%;
+    }
+    .img-container, .img-container{
+        height: auto;
+    }
+
+    .faqs-section{
+        width: 90%;
     }
 
     .info-small-container{
