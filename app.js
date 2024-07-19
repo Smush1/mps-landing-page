@@ -4,6 +4,7 @@
 const courseDetails =[
     {
         "id": 1,
+        "title": "BSc. in tourism & Hospitality Operations ",
         "detail": `<ul class="info-list">
                             <li>Affiliated to Dr. B.R. Ambedkar University, Agra Promoted jointly by National Skills Development Council (NSDC) and Tourism and Hospitality Skills Council (THSC)</li>
                             <li>
@@ -16,6 +17,7 @@ const courseDetails =[
     },
     {
         "id": 2,
+        "title": "BBA in Logistics",
         "detail" : ` <p>BBA (Bachelor of Business Administration) in Logistics Affiliated to Dr. B R Ambedkar University, AgraPromoted jointly by National Skills Development Council (NSDC) and Logistics SkillsCouncil (LSC).</p> 
         <p> Our full-time 3-year program, spanning 6 semesters, immerses you in the rapidly growing logistics industry. Witnessing significant expansion in recent years, this sector promises even more robust growth ahead.Once a subset of Business Administration, logistics has now emerged as a distinct field, essential for global goods and services delivery. Recognized by the Government of India as a premium offering in its Skill Development Mission, our course stands out with compulsory paid internships and guaranteed placements—a unique selling proposition (USP) that sets you on a path to success.</p>`
     }
@@ -25,6 +27,7 @@ const courseDetails =[
 
 const detailBtns = document.querySelectorAll('.exp-btn')
 const details = document.querySelector('#course-detail')
+const infoTitle = document.querySelector(".info-title")
 
 
 
@@ -34,9 +37,11 @@ detailBtns.forEach((btn)=>{
             buttonClass = e.currentTarget.classList
         if( buttonClass.contains("bsc")){
             details.innerHTML = courseDetails[0].detail
+            infoTitle.textContent = courseDetails[0].title
         }
         else{
             details.innerHTML = courseDetails[1].detail
+            infoTitle.textContent = courseDetails[1].title
         }
     })
 }
