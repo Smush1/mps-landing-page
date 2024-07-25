@@ -258,6 +258,36 @@ input{
 }
 
 
+/*  ||  Life at campus Section */
+
+.life-at-campus-grid-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.campus-image{
+    width:100%;
+    height: 100%;
+}
+
+.img-1-container{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.img-4-container, .img-5-container{
+    grid-row: 3 / 4;
+}
+.img-6-container{
+    grid-column: span 2;
+    grid-row: span 2;
+ 
+}
+
+
+
 
 
 
