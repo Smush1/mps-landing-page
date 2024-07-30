@@ -18,6 +18,7 @@ body{
     --BG-PERCENTAGE-CLR: #FFF3EF;
     --CLR-WHITE: #ffffff;
     --CLR-GREY: grey;
+    --CLR-LIGHT-GREY: lightgrey;
     --HEADING-COLOR: #BA4717;
 
 
@@ -100,7 +101,7 @@ input{
 }
 
 input::placeholder{
-    color: var(--CLR-GREY);
+    color: var(--CLR-LIGHT-GREY);
 }
 
 .form-button{
@@ -438,6 +439,10 @@ input::placeholder{
 /* || FAQ SECTION  */
 
 
+.faq-heading-title{
+    text-align: center;
+}
+
 
 .faqs-section{
     width: 60%;
@@ -651,6 +656,10 @@ details summary::-webkit-details-marker {
 
     .form-buttons-2 .btn{
         font-size: calc(var(--FONT-S) * 0.8);
+    }
+
+    .form-buttons-2 .btn{
+        width: 91%;
     }
 
     .info-img-container{
