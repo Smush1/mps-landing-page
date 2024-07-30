@@ -21,6 +21,12 @@ body{
     --HEADING-COLOR: #BA4717;
 
 
+    /* || Font sizes */
+    --FONT-XL: 35px;
+    --FONT-L: 26px;
+    --FONT-M: 18px;
+    --FONT-S: 15px;
+    --FONT-XS: 12px; 
 
 }
 
@@ -63,7 +69,7 @@ body{
 
 
 .hero-section-title{
-    font-size: clamp(1.5rem, 8vw, 3.2rem);
+    font-size: clamp(1rem, 8vw, 3.2rem);
 }
 .hero-section-text{
     background-image: url('./img/Background-image.jpg');
@@ -98,14 +104,15 @@ input{
 }
 
 .form-button .btn{
-    overflow: hidden;
-    text-overflow: ellipsis;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: var(--FONT-S);
 }
 
 .percentage-data{
     background-color: var(#FFF3EF);
     color: var(--LIGHT-CLR);
-    font-size: 75px;
+    font-size: calc(2* var(--FONT-XL) + 5px);
     font-weight: 800;
     margin-bottom: 0 ;
 }
@@ -143,9 +150,12 @@ input{
     color: var(--CLR-GREY);
 }
 
+
+
 .exp-btn:focus{
-    border-color: var(--LIGHT-CLR);
-    color: var(--LIGHT-CLR);
+    background-color: var(--LIGHT-CLR);
+    color: var(--CLR-WHITE);
+    box-shadow: none;
 }
 
 .info-title{
@@ -161,7 +171,7 @@ input{
 }
 
 .info-list{
-    font-size: 15px;
+    font-size: var(--FONT-S);
 }
 
 .info-img-container
@@ -303,7 +313,8 @@ input{
     background: var(--CLR-WHITE);
     padding: 40px;
     margin: 20px auto;
-}
+    border-top: 5px solid var(--LIGHT-CLR);
+};
 
 
 .bg-form-heading{
@@ -313,6 +324,10 @@ input{
 .form-buttons-2 {
     column-gap: 2rem;
     row-gap: 1rem;
+}
+
+.form-buttons-2 .btn{
+    font-size: var(--FONT-S);
 }
 
 .bg-sub-text{
@@ -325,10 +340,100 @@ input{
 
 
 
+.landing-faq {
+    padding: 50px 0px;
+}
+
+.landing-faq .faq-box {
+    background-color: transparent !important;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 30px;
+}
+
+.landing-faq .faq-h {
+    border: none;
+    padding: 0px;
+    align-items: center;
+}
+
+.landing-faq .faq-h p {
+    font-weight: 600;
+}
+
+.landing-faq .faq-text {
+    max-width: 80%;
+    color: rgba(111, 108, 144, 1);
+    padding: 10px 0 0 0;
+}
+
+.landing-faq .fa-solid {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 50%;
+}
+
+.landing-faq .slick-dots {
+    margin-top: 30px !important;
+}
+
+
+
+/* 17.FAQs Section Start ------------------------------ */
+.faqs {
+    padding: 80px 0px;
+    background: var(--th-bg-4);
+}
+
+.fa-head {
+    background-color: var(--th-bg-1);
+    color: var(--th-bg-3);
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.faq-box {
+    background: var(--th-bg-3);
+    margin-top: 15px;
+}
+
+.faq-h {
+    padding: 10px 30px;
+    border: 1px solid #EBEBEB;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.faq-h p {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.faq-text {
+    display: none;
+    padding: 20px;
+}
+
+.faq-text p {
+    margin: 0;
+}
+
+/* ------------- FAQs Section End ------------- */
+
+
+
+
+
 
 
 
 /* || FAQ SECTION  */
+
+
 
 .faqs-section{
     width: 60%;
@@ -340,6 +445,7 @@ input{
 
 .que-ans{
     position: relative;
+    transform-origin: left top;
 }
 
 .fa-solid{
@@ -358,6 +464,7 @@ input{
 .que-ans[open] .question .down-arrow{
     transform: rotate(0deg);
 }
+
 
 .question{
     padding: 20px;
@@ -469,7 +576,7 @@ details summary::-webkit-details-marker {
 
 .footer .link-list a {
     color: var(--CLR-WHITE);
-    font-size: 18px;
+    font-size: var(--FONT-M);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -521,11 +628,25 @@ details summary::-webkit-details-marker {
 /* ------------- Footer Section End ------------- */
 
 
+@media screen and (min-width: 769px) and (max-width: 1446px) {
+    .form-button .btn, .form-buttons-2 .btn{
+        font-size: calc(var(--FONT-M) * 0.7);
+    }    
+}
+
 
 
 @media screen and (max-width: 768px){
     .percentage-container{
         flex-direction: column;
+    }
+
+    .form-button .btn{
+        font-size: calc(var(--FONT-M) * 0.7);
+    }   
+
+    .form-buttons-2 .btn{
+        font-size: calc(var(--FONT-S) * 0.8);
     }
 
     .info-img-container{
@@ -535,6 +656,7 @@ details summary::-webkit-details-marker {
 
     .bg-form-main-container{
         width: 95%;
+        
     }
 
     .img-container, .img-container-2, .info-container, .bg-sub-text, .bg-form-inner-container .form-control{
@@ -555,6 +677,9 @@ details summary::-webkit-details-marker {
 
     .info-small-col:nth-child(:first-child){
         padding: 20px 0 40px 0;
+    }
+    .info-small-col:nth-child(:last-child){
+        padding-bottom: 20px;
     }
     .exp-btns-container{
         flex-direction: column;
