@@ -61,8 +61,7 @@ questions.forEach((question)=> {
 
     
 
-$document.ready( ()=> {
-
+$(document).ready( ()=> {
 
     $('.faq-h').click(function () {
         // Toggle the display of the FAQ answer
@@ -71,26 +70,6 @@ $document.ready( ()=> {
         // Toggle the arrow icon direction
         $(this).find('i').toggleClass('fa-chevron-down fa-chevron-up');
     });
-    
-
-
-    $(".faq-tab .th-p").slideUp();
-        $(".faq-tab").on('click', function () {
-            if ($(this).hasClass("active")) {
-                $(this).find(".th-p").slideUp();
-                $(this).find(".faq-h-icon").css({
-                    "transform": "rotate(0deg)"
-                })
-                $(this).removeClass("active");
-            } else {
-                $(this).addClass("active");
-
-                $(this).find(".faq-h-icon").css({
-                    "transform": "rotate(180deg)"
-                })
-                $(this).find($(".th-p")).slideDown();
-            }
-        })
     }
     )
 
