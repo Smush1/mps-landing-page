@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/earlyaccess/opensanshebrew.css');
+@import url('https://fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css');
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *{
     margin:0;
     padding:0;
@@ -6,7 +10,9 @@
 
 
 body{
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans Hebrew', 'Open Sans' ;
+    overflow-x: hidden;
+
 }
 
 :root {
@@ -30,6 +36,20 @@ body{
     --FONT-XS: 12px; 
 
 }
+
+/*  Scrollbar Styling start */
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--LIGHT-CLR); 
+    border-radius: 10px;
+    height:20px;
+  }
+
+/*  Scrollbar Styling end */
 
 
 .btn-color-orange{
@@ -67,6 +87,10 @@ body{
     justify-content: space-around!important;
 }
 
+.nav-item .nav-link{
+    font-size: calc( var(--FONT-M) * 1.1);
+}
+
 
 
 .hero-section-title{
@@ -80,16 +104,26 @@ body{
 }
 
 .hero-section-inner-container{
-    padding: 40px 0;
+    padding: 100px 0;
     row-gap: 1rem;
     background-image: linear-gradient(0deg, rgba(24, 55, 79, 0.6),
     rgba(24, 55, 79, 1));
     align-items: center;
 }
 
-.hero-section-bba-heading{
-    border-bottom: 3px solid var(--LIGHT-CLR);
+.hero-section-title{
+    border-bottom: 2px solid var(--LIGHT-CLR);
+    margin-bottom: 70px;
 }
+
+.hero-adm{
+    font-size: calc(var(--FONT-M) * 1.1);
+}
+
+.adm-sub-text{
+    font-size: var(--FONT-M);
+}
+
 
 
 .margin-auto{
@@ -112,6 +146,7 @@ input::placeholder{
     text-transform: uppercase;
     font-weight: bold;
     font-size: var(--FONT-S);
+    padding: 12px 0 !important;
 }
 
 .percentage-data{
@@ -244,6 +279,11 @@ input::placeholder{
     width: 90%;
 }
 
+.campus-gallery-title{
+    color: var(--DARK-CLR);
+    font-weight: bold;
+}
+
 .carousel-control-prev, .carousel-control-next{
     display: none;
 }
@@ -314,11 +354,16 @@ input::placeholder{
     background-image: url(./img/campus-bg-img.jpg);
 }
 
+.bg-form-outer-container{
+    padding: 80px 0;
+}
+
 .bg-form-main-container{
     background: var(--CLR-WHITE);
     padding: 40px;
     margin: 20px auto;
     border-top: 5px solid var(--LIGHT-CLR);
+    color: var(--DARK-CLR)
 };
 
 
@@ -333,10 +378,13 @@ input::placeholder{
 
 .form-buttons-2 .btn{
     font-size: var(--FONT-S);
+    padding: 10px 0!important;
+    font-weight: bold;
 }
 
 .bg-sub-text{
     width: 55%;
+    font-size: var(--FONT-M)
 }
 
 .bg-form-inner-container .form-control{
@@ -416,6 +464,7 @@ input::placeholder{
 .faq-h p {
     margin: 0;
     text-transform: capitalize;
+    font-size: var(--FONT-M);
 }
 
 .faq-text {
@@ -441,6 +490,8 @@ input::placeholder{
 
 .faq-heading-title{
     text-align: center;
+    color: var(--DARK-CLR);
+    font-weight: bold;
 }
 
 
@@ -555,6 +606,11 @@ details summary::-webkit-details-marker {
     background-color: var(--DARK-CLR);
     padding: 50px 0px;
 }
+
+.subscribe-email::placeholder{
+    color: var(--CLR-GREY)
+}
+
 
 .th-btn {
     background: var(--LIGHT-CLR);
