@@ -52,6 +52,13 @@ body{
 /*  Scrollbar Styling end */
 
 
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+
 .btn-color-orange{
     background-color: var(--LIGHT-CLR);
     color: var(--CLR-WHITE);
