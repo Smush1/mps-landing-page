@@ -207,6 +207,7 @@ input::placeholder{
 
 .info-title{
     color: var(--HEADING-COLOR) ;
+    font-weight: bold;
 }
 
 .color-blue{
