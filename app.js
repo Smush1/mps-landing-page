@@ -50,11 +50,6 @@ detailBtns.forEach((btn)=>{
 
 
 
-
-
-
-
-
 //Sliding questions
 
 
@@ -66,7 +61,6 @@ questions.forEach((question)=> {
 
 
 
-$(document).ready( ()=> {
 
     $('.faq-h').click(function () {
         // Toggle the display of the FAQ answer
@@ -75,8 +69,8 @@ $(document).ready( ()=> {
         // Toggle the arrow icon direction
         $(this).find('i').toggleClass('fa-chevron-down fa-chevron-up');
     });
-    }
-    )
+
+
 
 
 
