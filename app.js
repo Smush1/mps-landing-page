@@ -11,7 +11,7 @@ const courseDetails =[
                                 Our full-time professional program opens doors to global job opportunities. With many countries relying on tourism and hospitality for revenue, India's rich cultural heritage promises exponential sector growth. Recognized as a promising industry, our course meets the increasing demand for skilled professionals.
                             </li>
                             <li>
-                                This program offers a rewarding career pathway filled with adventure and glamour. Star Hotels and Resorts, Tour operators, Cruise operations, Ticketing and Foreign Exchange, Catering business, Cloud kitchens, Interpreter roles, Airlines lines ,Hospitals, Malls.
+                                This program offers a rewarding career pathway filled with adventure and glamour. Star Hotels and Resorts, Tour operators, Cruise operations, Ticketing and Foreign Exchange, Catering business, Cloud kitchens, Interpreter roles, Airlines lines, Hospitals, Malls.
                             </li>
                         </ul>`
     },
@@ -48,6 +48,49 @@ detailBtns.forEach((btn)=>{
 }
 )
 
+
+$(".brand-slider").slick({
+    dots: false,
+    arrows: false,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 4000,
+    pauseOnHover: false,
+    cssEase: 'linear',
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        }
+    ]
+})
+
+
+
+
+
+
+
+//Sliding questions
 
 
 const questions = document.querySelectorAll('.faq-box');

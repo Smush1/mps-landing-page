@@ -81,6 +81,16 @@ header{
     padding: 35px;
 }
 
+.dwn-brc a, .dwn-brc a:focus{
+    color: white;
+    text-decoration: none;
+}
+
+.dwn-brc a:active{
+    background-color: var(--CLR-WHITE);
+    color: var(--DARK-CLR);
+}
+
 #navbarSupportedContent{
     justify-content: flex-end;
     column-gap: 3rem;
@@ -163,9 +173,12 @@ input::placeholder{
     font-weight: 800;
     margin-bottom: 0 ;
 }
+.percentage-info{
+    color: var(--DARK-CLR);
+    font-weight:800;
+}
 
 .percentage-container{
-    background-color: var(--BG-PERCENTAGE-CLR);
     padding: 40px 0;
 }
 
@@ -320,6 +333,43 @@ input::placeholder{
     margin: 40px auto;
 }
 
+.landing-img{
+    width: 250px;
+}
+
+.recruiters-heading-container{
+   background-color: var(--LIGHT-CLR);
+   color: var(--CLR-WHITE);
+   font-weight: 800;
+   padding: 50px 20px;
+
+}
+
+@media screen and (max-width: 600px) {
+    .recruiters-heading-container{
+        padding: 10px 20px;
+        text-align: center;
+    }
+}
+
+.re-left::after{
+    content: '';
+    position: absolute;
+    padding: 50px 20px;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 1;
+    background-color: var(--LIGHT-CLR);
+    transform: skew(20deg) translateX(50px);
+}
+.re-left h2{
+    color: white;
+    margin-left: 40px!important;
+    font-weight: bold;
+}
+
 
 /*  ||  Life at campus Section */
 
@@ -328,6 +378,11 @@ input::placeholder{
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1rem;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: auto;
 }
 
 .campus-image{
