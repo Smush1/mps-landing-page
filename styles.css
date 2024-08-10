@@ -194,7 +194,7 @@ input::placeholder{
 }
 
 .explore-program-section{
-    width:90%;
+    width:94%;
     margin: 0 auto;
 }
 
@@ -276,7 +276,7 @@ input::placeholder{
 
 .courses-highlights{
     background: var(--HIGHLIGHTBG-LIGHT-CLR);
-    width: 90%; 
+    width: 94%; 
 }
 
 .ch-main-container{
@@ -297,7 +297,7 @@ input::placeholder{
 /* ||  Life at Campus section   */
 
 .campus-gallery{
-    width: 90%;
+    width: 94%;
 }
 
 .campus-gallery-title{
@@ -329,7 +329,7 @@ input::placeholder{
 /* ||  Recruiter Section */
 
 .recruiters-section{
-    width: 90%;
+    width: 94%;
     margin: 40px auto;
 }
 
@@ -799,7 +799,7 @@ details summary::-webkit-details-marker {
     }
 
     .faqs-section{
-        width: 90%;
+        width: 94%;
     }
 
     .info-small-container{
